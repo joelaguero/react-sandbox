@@ -32,7 +32,6 @@ if (isDeveloping) {
     res.end();
   });
 } else {
-  console.log(_dirname);
   app.use(express.static(__dirname + '/app'));
   app.get('*', function response(req, res) {
     res.sendFile(path.join(__dirname, 'index.tpl.html'));
