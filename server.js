@@ -39,11 +39,12 @@ if (isDeveloping) {
   });
 }
 
-app.all('/db/*', function(req, res) {
-  proxy.web(req, res {
-    target: 'https://fiery-inferno-8831.firebaseio.com'
-  });
-});
+// Connect to firebase.
+// app.all('/db/*', function(req, res) {
+//   proxy.web(req, res {
+//     target: 'https://fiery-inferno-8831.firebaseio.com'
+//   });
+// });
 
 app.listen(port, '0.0.0.0', function onStart(err) {
   if (err) {
