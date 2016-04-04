@@ -6,12 +6,12 @@ app.use((req, res) => {
   <!DOCTYPE html>
   <html>
     <head>
-      <meta charset='utf-8'>
+      <meta charset="utf-8">
       <title>Penpen</title>
     </head>
     <body>
-      <div id='react-view'></div>
-      <script type='application/javascript' src='/bundle.js'></script>
+      <div id="react-view"></div>
+      <script type="application/javascript" src="/bundle.js"></script>
     </body>
   </html>
   ;
