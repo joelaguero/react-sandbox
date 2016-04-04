@@ -1,5 +1,4 @@
 /* eslint no-console: 0 */
-
 const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
@@ -35,7 +34,7 @@ if (isDeveloping) {
 } else {
   app.use(express.static(__dirname + '/app'));
   app.get('*', function response(req, res) {
-    res.sendFile(path.join(__dirname, 'app/index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
   });
 }
 
